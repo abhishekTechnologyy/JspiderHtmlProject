@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Tag</title>
+</head>
+<body>
+    <h1 align="center">Media Tags in HTML</h1>
+    <p>
+        <b>HTML</b> uses <b>video</b> and <b>audio</b> tags to display it on the web page.
+
+        <br>
+        <h2>Attributes :</h2>
+        <ol>
+            <li>src</li>
+            <li>controls</li>
+            <li>muted</li>
+            <li>autoplay</li>
+            <li>loop</li>
+            <li>height</li>
+            <li>width</li>
+            <li>poster</li>
+        </ol>
+
+        <br>
+        <hr>
+
+    </p>
+
+    <p>
+        <b>poster,height and width</b> attributes will not be supported in audio tags.
+    </p>
+    <br><hr>
+
+    <h2>Examples are :</h2>
+    <p>
+        
+    <video src="./video.mp4" controls height="500" width="400"></video>
+    <video src="./Untitled.mp4" controls autoplay muted height="500" width="400"></video>
+    <video src="./Dasvidaniya'19 - IIT Bombay MTech Computer Science 2019 Batch Farewell.mp4" controls muted autoplay loop height="400" width="800"></video>
+   
+    <video 
+    src="./Untitled.mp4" 
+    controls
+    poster="./photo_2021-07-13 21.16.44.jpeg"
+    height="500" width="400">
+    </video> <!-- Poster is just like thumbnail to see thumbnail remove the autoplay tag -->
+
+    <audio src="./Main Bola Hey ktkGod Kota Factory.mp3" controls autoplay loop></audio>
+
+
+    </p>
+</body>
+</html>

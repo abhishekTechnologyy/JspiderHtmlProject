@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1 align="center">Forms</h1>
+
+    <p>
+        <B><I>HTML uses "forms" tag to collect the user input that a user should enter.</I></B>
+
+        <hr><br>
+
+        <ol>
+            <li>
+                <h2>< label> tag :</h2>
+                <p>It is used to display the type of input that a user should enter.</p>
+            </li>
+
+            <li>
+                <h2> < input> tag </h2>
+                <p>It is used to collect different types of user input.</p>
+                <br><hr>
+                <h3>Attributes for <b>input</b> tag</h3>
+                <dl>
+                    <dt><b>Type :</b></dt>
+                    <dd><ol>
+                        <li>It specifies the type of value from a user.</li>
+                        <li>text , email , password , date , number , tel , checkbox , radio , file</li>
+                    </ol></dd>
+
+                    <dt><b>Name :</b></dt>
+                    <dd>This attribute specifies where the input values will be stored in the backend</dd>
+
+                    <dt><b>Required :</b></dt>
+                    <dd><b>"req"</b> it is used to make input field mandatory.</dd>
+
+                    <dt><b>Place Holder:</b></dt>
+                    <dd>It displays a text within the input field</dd>
+
+                    <dt><b>min and max :</b></dt>
+                    <dd>It is used along with input type <b>"number"</b> that specifies the minimum and the maximum value that a user should enter</dd>
+
+                    <dt><b>minlength and axlength :</b></dt>
+                    <dd>It is used to set a limit for minimum and maximum no. of characters that a user should enter.</dd>
+
+                    <dt><b>Text area :</b></dt>
+                    <dd>This is used to enter larger input. The size of the text area can be controlled using rows and columns values</dd>
+
+                    <dt><b>Select tag :</b></dt>
+                    <dd>It is used to create a drop down for multiple options.</dd>
+                </dl>
+            </li>
+        </ol>
+    </p>
+
+    <br><hr>
+
+    <h2>Examples are :</h2>
+
+   <p>
+    <form action="">
+        <label for="">Email</label>
+        <input type="text">
+
+        <br>
+        <br>
+        <label for="">Password</label>
+        <input type="text">
+
+        <BR></BR>
+        <BR></BR>
+
+        <button>LOGIN</button>
+    </form>
+
+    <!---------------------------------------------------->
+
+    <form action="./Home.html">
+       
+        <label for="">NAME</label>
+        <input type="text">
+        <br><br>
+        <label for="email"> Enter Your Email Address</label>
+        <input type="text">
+
+        <BR></BR> <BR></BR>
+        <label for="Password"> Enter Your Password</label>
+        <input type="password">
+        <BR></BR> <BR></BR>
+
+
+        <label for="">DATE of birth</label>
+        <input type="date">
+        <br><br>
+
+        <label for="">Mobile Number</label>
+        <input type="tel">
+        <br><br>
+
+        <label for="">No. of Backlogs</label>
+        <input type="number" max="4" min="0">
+        <br><br>     
+        
+        <label for="">Address</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <br><br>
+        <input type="checkbox">
+        <label for="">Accept the terms and conditions</label>
+        <br><br>
+        <label for="">Upload Your Resume</label>
+        <input type="file">
+        <br><br>
+
+        <label for="">Gender:</label> <br>
+        <label for="">Male</label>
+        <input name="Gender"  type="radio">
+        <br><br>
+        <label for="">Female</label>
+        <input name="Gender"  type="radio">
+        <br><br>
+
+        
+        <label for="">Branch:</label>
+        <select name="BRANCH" id="">
+            <option value="">CSE</option>
+            <option value="">IT</option>
+            <option value="">ECE</option>
+
+        </select>
+        <br><br>
+
+        <input placeholder="Enter Your Email"> <br><br>
+        <input required placeholder="Enter Your Name"> <br><br>
+        <input placeholder="Enter Your Password" minlength="6"> <br><br>
+        <input placeholder="Enter Contact Number" minlength="10" maxlength="10"> <br><br>
+        <button type="reset">RESET</button>
+        <button type="submit">LOGIN</button>
+
+    </form>
+
+</p>
+    
+</body>
+</html>
